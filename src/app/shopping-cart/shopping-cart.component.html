@@ -1,0 +1,46 @@
+<app-back-button></app-back-button>
+
+
+<h1 class="title">My Cart</h1>
+    
+  <!-- <div class="list-group">
+    <div class="list-group-item" *ngFor="let product of cart">
+        {{product.name}}
+        {{product.price}}
+        <img src={{product.img_url}} >
+    </div> -->
+<!-- <div class="main-div"> -->
+    <div class="cart-list" *ngFor="let product of cart">
+    <div class="product">
+        <img src={{product.img_url}}> 
+        <div style="display:flex; flex-direction: column; margin-left: 10px;">
+        <h1>{{product.name}}</h1>
+        <span>P{{product.price}}</span>
+        <div style="display: flex; justify-content: space-between;">
+        <button>-</button> {{product.qty_ordered}} <button mat-button>+</button>
+        </div>
+        </div>
+    </div>
+    </div>
+<!-- </div> -->
+
+<div class="payment-details">
+    <mat-card class="payment-card" >
+        <mat-card-header>
+            <mat-card-title><p class="align-left">Pay With: GCash </p> <div class="change-button">Change</div>
+                </mat-card-title>
+            
+        </mat-card-header>
+        <mat-card-content>
+            <p class="align-left">Sub-Total: </p> <p class="align-right">{{getSubTotal()}}</p>
+            <br/><br/><p class="align-left">Administrative Costs: </p> <p class="align-right">{{adminCost}}</p>
+            <br/><br/><p class="align-left">Shipping Costs: </p> <p class="align-right">{{shippingCost}}</p>
+            <br/><br/><p class="align-left">Total: </p> <p class="align-right">{{getTotal()}}</p>
+
+        </mat-card-content>
+        <div class="pay-button">
+            Pay now
+        </div>
+
+    </mat-card>
+</div>

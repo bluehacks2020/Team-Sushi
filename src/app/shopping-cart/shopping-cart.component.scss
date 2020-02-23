@@ -1,0 +1,78 @@
+:host {
+    background-color: #5BC0EB;
+    size: 200px 200px;
+    display: block;
+}
+
+.title {
+  text-align: center;
+  margin-top: -30px;
+  color: white;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.product {
+  padding: 20px;
+  display: flex;
+  background-color: white;
+}
+
+.product > h1 {
+  display: inline;
+}
+.example-card {
+    max-width: relative;
+    max-height: 200px;
+    background-color: blue;
+  }
+
+  .main-div{
+    height: 100vh;
+    display: flex;
+   
+    align-items: center;
+  }
+
+  .align-left {
+    float: left;
+  }
+  .align-right {
+    float: right;
+  }
+
+  .pay-button {
+    position: relative;
+    top: 10px;
+    background-color: #9bc53d;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.change-button{
+    position: relative;
+    // left: 200px;
+    // background-color: green;
+    // text-align: center;
+    // height: 10px;
+    // border-radius: 30px;
+    // padding: 15px;
+    // font-size: 15px;
+    float: right;
+    left: 100px;
+    background-color: green;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 30px;
+    
+}
+
+
+
+  
